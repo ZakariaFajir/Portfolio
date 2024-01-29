@@ -11,7 +11,7 @@ function Footer() {
         <li className="mx-2">
           <a
             className="text-gray-400 hover:text-gray-300"
-            href="https://github.com"
+            href="https://github.com/ZakariaFajir/"
           >
             <i className="fab fa-github"></i>
           </a>
@@ -19,17 +19,9 @@ function Footer() {
         <li className="mx-2">
           <a
             className="text-blue-400 hover:text-blue-300"
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/fajir-zakaria/"
           >
             <i className="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li className="mx-2">
-          <a
-            className="text-blue-400 hover:text-blue-300"
-            href="https://twitter.com"
-          >
-            <i className="fab fa-twitter"></i>
           </a>
         </li>
       </ul>

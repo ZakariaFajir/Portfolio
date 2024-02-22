@@ -59,27 +59,27 @@ export default function Projects() {
   const { language } = useContext(AppContext);
   const projectDescriptions = {
     en: {
-      biblioApp:
+      libraLink:
         "I developed a Biblio web application using React, Tailwind CSS, Node.js, Express, Axios, and Redux. The app enables users to make purchases, sign in, reset passwords, and sign in with Google. When the order is confirmed, the library owner will be notified via email with comprehensive order details. Users can explore and track their purchase and shopping history within the app.",
       portfolio:
         "This portfolio project is powered by React and designed using Tailwind CSS, showcasing my web development abilities. It highlights a clean and responsive design.",
-      project1:
-        "The maintenance management project is an application designed to handle products and materials throughout their lifecycle. The application provides comprehensive features to create, track, and document maintenance interventions.",
+      infoSwift:
+        "A maintenance management solution tailored for the industry, designed to provide instant access to detailed information on past interventions for a product. This platform generates a unique link intended to be integrated into an NFC chip or QR codes. Hence, clients can swiftly view the complete intervention history, including technical forms and technical details associated with the product.",
     },
     fr: {
-      biblioApp:
+      libraLink:
         "J'ai développé une application web Biblio en utilisant React, Tailwind CSS, Node.js, Express, Axios et Redux. L'application permet aux utilisateurs de faire des achats, de se connecter, de réinitialiser leur mot de passe et de se connecter avec Google. Lorsque la commande est confirmée, le propriétaire de la bibliothèque est informé par e-mail avec des détails de commande complets. Les utilisateurs peuvent explorer et suivre leurs achats et leur historique d'achat dans l'application.",
       portfolio:
         "Ce projet de portfolio est alimenté par React et conçu avec Tailwind CSS, mettant en valeur mes compétences en développement web. Il présente un design épuré et réactif.",
-      project1:
-        "Le projet de gestion de maintenance est une application conçue pour gérer les produits et les matériaux tout au long de leur cycle de vie. L'application offre des fonctionnalités complètes pour créer, suivre et documenter les interventions de maintenance.",
+      infoSwift:
+        "Une solution de gestion de maintenance dédiée à l'industrie, conçue pour fournir un accès instantané aux informations détaillées sur les interventions passées sur un produit. Cette plateforme permet de générer un lien unique destiné à être intégré dans une puce NFC ou des codes QR. Ainsi, les clients peuvent rapidement visualiser l'historique complet des interventions, y compris les formulaires techniques et les détails techniques associés au produit",
     },
   };
 
   const projectData = [
     {
-      imgUrl: "img/biblioApp.jpeg",
-      title: language === "en" ? "Biblio App" : "Application Biblio",
+      imgUrl: "img/LibraLink.jpeg",
+      title: "LibraLink",
       technologies: [
         "React",
         "Tailwind CSS",
@@ -91,14 +91,14 @@ export default function Projects() {
       ],
       description:
         language === "en"
-          ? projectDescriptions.en.biblioApp
-          : projectDescriptions.fr.biblioApp,
-      openLink: "https://biblio-app-frontend.vercel.app/",
+          ? projectDescriptions.en.libraLink
+          : projectDescriptions.fr.libraLink,
+      openLink: "https://libralink.vercel.app/",
+      githubLink: "https://github.com/ZakariaFajir/LibraLink-frontend",
     },
     {
       imgUrl: "img/GestionMaintenance.jpeg",
-      title:
-        language === "en" ? "Maintenance management" : "Gestion de maintenance",
+      title: "InfoSwift",
       technologies: [
         "React",
         "Node",
@@ -109,9 +109,10 @@ export default function Projects() {
       ],
       description:
         language === "en"
-          ? projectDescriptions.en.project1
-          : projectDescriptions.fr.project1,
-      openLink: "https://gestion-maintenance.onrender.com/",
+          ? projectDescriptions.en.infoSwift
+          : projectDescriptions.fr.infoSwift,
+      openLink: "https://infoswift.onrender.com/",
+      githubLink: "https://github.com/ZakariaFajir/InfoSwift",
     },
     {
       imgUrl: "img/portfolio.PNG",
@@ -121,8 +122,8 @@ export default function Projects() {
         language === "en"
           ? projectDescriptions.en.portfolio
           : projectDescriptions.fr.portfolio,
-      openLink: "#",
-      githubLink: "#",
+      openLink: "https://portfolio-zakaria-fajir.vercel.app",
+      githubLink: "https://github.com/ZakariaFajir/Portfolio",
     },
   ];
 

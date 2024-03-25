@@ -22,7 +22,7 @@ const Project = ({
               {language === "en"
                 ? "Technologies used:"
                 : "Technologies utilisées:"}
-            </strong>{" "}
+            </strong>
             {technologies.join(", ")}
           </h3>
           <p className="dark:text-gray-300 text-base mb-4">{description}</p>
@@ -45,7 +45,7 @@ const Project = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              {language === "en" ? "Github" : "Github"}{" "}
+              Github
               <i className="fa-brands fa-github ml-2 transition !duration-0"></i>
             </a>
           )}
@@ -112,7 +112,6 @@ export default function Projects() {
           ? projectDescriptions.en.infoSwift
           : projectDescriptions.fr.infoSwift,
       openLink: "https://infoswift.onrender.com/",
-      githubLink: "https://github.com/ZakariaFajir/InfoSwift",
     },
     {
       imgUrl: "img/portfolio.PNG",

@@ -111,7 +111,7 @@ export default function Projects() {
         language === "en"
           ? projectDescriptions.en.infoSwift
           : projectDescriptions.fr.infoSwift,
-      openLink: "https://infoswift.onrender.com/",
+      openLink: "https://inddig.onrender.com/",
     },
     {
       imgUrl: "img/portfolio.PNG",
